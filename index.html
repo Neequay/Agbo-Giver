@@ -4,8 +4,80 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <!-- import tailwind css -->
+    <link rel="stylesheet" href="src/output.css">
+
+    <!-- import font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+
+    <!-- import icons : Phosphore -->
+    <link
+    rel="stylesheet"
+    type="text/css"
+    href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css"
+  />
+
+
 </head>
 <body>
+    <section class="bg-[#131900] text-white min-h-screen flex items-center justify-center py-12">
+        <div class="wrapper w-full flex flex-col gap-[48px] mx-auto max-w-[1220px] px-6">
+            
+            <div class="sectionTitle flex flex-col gap-2 text-sm items-center justify-center text-center">
+                <p class="uppercase tracking-wider opacity-80">Success Stories</p>
+                <h2 class="text-3xl md:text-4xl font-title text-color-primary font-extrabold">OUR IMPACT IN ACTION</h2>
+            </div>
+            
+            <!-- story Cards -->
+            <div class="storyCardsContanier grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2 w-full">
+                
+                <div class="group card flex flex-col h-[450px] bg-stone-900/40 p-2 pb-3 rounded-[32px] border border-stone-800 overflow-hidden">
+                    <div class="cardImg w-full flex-1 bg-amber-200 rounded-[24px] transition-all duration-500 ease-out"></div>
+                    <div class="storyTextContainer pt-4 px-2">
+                        <p class="topic text-sm text-amber-300">Empowering Students</p>
+                        <h3 class="storyTitle text-2xl mt-[8px]">Abena's Journey</h3>
+                        <p class="date text-sm opacity-60 mt-1">May 28th, 2023</p>
+                    </div>
+                    <div class="buttons grid grid-cols-[1fr_auto] items-center gap-2 px-2 max-h-0 opacity-0 overflow-hidden transition-all duration-500 ease-out group-hover:max-h-[60px] group-hover:opacity-100 group-hover:pt-4">
+                        <a href="#readMore" class="py-2 px-4 border border-amber-50/20 text-amber-100 rounded-full hover:bg-amber-100/20 text-center text-sm font-medium transition-colors">Read more</a>
+                        <i class="ph ph-share-network p-2 border border-amber-50/20 text-amber-100 rounded-full hover:bg-amber-100/20 cursor-pointer flex items-center justify-center w-[38px] h-[38px] transition-colors"></i>
+                    </div>
+                </div>
     
+                <div class="group card flex flex-col h-[450px] bg-stone-900/4 p-2 pb-3 rounded-[32px] border border-stone-800 overflow-hidden">
+                    <div class="cardImg w-full flex-1 bg-amber-200 rounded-[24px] transition-all duration-500 ease-out"></div>
+                    <div class="storyTextContainer pt-4 px-2">
+                        <p class="topic text-sm text-amber-300">Empowering Students</p>
+                        <h3 class="storyTitle text-2xl mt-[8px]">Abena's Journey</h3>
+                        <p class="date text-sm opacity-60 mt-1">May 28th, 2023</p>
+                    </div>
+                    <div class="buttons grid grid-cols-[1fr_auto] items-center gap-2 px-2 max-h-0 opacity-0 overflow-hidden transition-all duration-500 ease-out group-hover:max-h-[60px] group-hover:opacity-100 group-hover:pt-4">
+                        <a href="#readMore" class="py-2 px-4 border border-amber-50/20 text-amber-100 rounded-full hover:bg-amber-100/20 text-center text-sm font-medium transition-colors">Read more</a>
+                        <i class="ph ph-share-network p-2 border border-amber-50/20 text-amber-100 rounded-full hover:bg-amber-100/20 cursor-pointer flex items-center justify-center w-[38px] h-[38px] transition-colors"></i>
+                    </div>
+                </div>
+                
+                <div class="group card flex flex-col h-[450px] bg-stone-900/4 p-2 pb-3 rounded-[32px] border border-stone-800 overflow-hidden">
+                    <div class="cardImg w-full flex-1 bg-amber-200 rounded-[24px] transition-all duration-500 ease-out"></div>
+                    <div class="storyTextContainer pt-4 px-2">
+                        <p class="topic text-sm text-amber-300">Empowering Students</p>
+                        <h3 class="storyTitle text-2xl mt-[8px]">Abena's Journey</h3>
+                        <p class="date text-sm opacity-60 mt-1">May 28th, 2023</p>
+                    </div>
+                    <div class="buttons grid grid-cols-[1fr_auto] items-center gap-2 px-2 max-h-0 opacity-0 overflow-hidden transition-all duration-500 ease-out group-hover:max-h-[60px] group-hover:opacity-100 group-hover:pt-4">
+                        <a href="#readMore" class="py-2 px-4 border border-amber-50/20 text-amber-100 rounded-full hover:bg-amber-100/20 text-center text-sm font-medium transition-colors">Read more</a>
+                        <i class="ph ph-share-network p-2 border border-amber-50/20 text-amber-100 rounded-full hover:bg-amber-100/20 cursor-pointer flex items-center justify-center w-[38px] h-[38px] transition-colors"></i>
+                    </div>
+                </div>
+            </div>
+
+            <button class="transition-all border px-4 py-2 hover:scale-110 rounded-full self-center border-amber-50/20 text-sm flex items-center justify-center gap-2 cursor-pointer hover:bg-amber-50/20"  >
+                Read More Stories
+                <i class="ph ph-arrow-up-right opacity-60"></i>
+            </button>
+        </div>
+    </section>
 </body>
 </html>
